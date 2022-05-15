@@ -13,7 +13,7 @@ const DATA = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={DATA}/>
   </React.StrictMode>
 );
 
@@ -22,5 +22,3 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-ReactDOM.render(<App tasks={DATA} />,
-document.getElementById("root"))
